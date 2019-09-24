@@ -5,4 +5,4 @@ function newCellState(isCurrentlyAlive, numberOfNeighbours) {
   return numberOfNeighbours >= 2 && numberOfNeighbours < 4;
 }
 
-module.exports = { newCellState };
+module.exports = newCellState;

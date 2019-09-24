@@ -1,4 +1,4 @@
-const { newCellState } = require("./newCellState");
+const newCellState = require("./newCellState");
 
 test("Any live cell with fewer than two live neighbours dies, as if by underpopulation.", () => {
   expect(newCellState(true, 0)).toBe(false);
