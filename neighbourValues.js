@@ -1,16 +1,28 @@
-function numberOfNeighbours(coordinate, grid) {
-  const neighbours = [
-    grid[coordinate.row - 1][coordinate.column - 1],
-    grid[coordinate.row - 1][coordinate.column],
-    grid[coordinate.row - 1][coordinate.column + 1],
-    grid[coordinate.row][coordinate.column - 1],
-    grid[coordinate.row][coordinate.column + 1],
-    grid[coordinate.row + 1][coordinate.column - 1],
-    grid[coordinate.row + 1][coordinate.column],
-    grid[coordinate.row + 1][coordinate.column + 1]
-  ];
+function neighbourValues(coordinate, grid) {
+  let neighbours = [];
 
-  return neighbours;
+  if (grid[coordinate.row - 1] !== undefined) {
+    neighbours.push(grid[coordinate.row - 1][coordinate.column - 1]);
+    neighbours.push(grid[coordinate.row - 1][coordinate.column]);
+    neighbours.push(grid[coordinate.row - 1][coordinate.column + 1]);
+  }
+
+  if (grid[coordinate.row] !== undefined) {
+    neighbours.push(grid[coordinate.row][coordinate.column - 1]);
+    neighbours.push(grid[coordinate.row][coordinate.column + 1]);
+  }
+
+  if (grid[coordinate.row + 1] !== undefined) {
+    neighbours.push(grid[coordinate.row + 1][coordinate.column - 1]);
+    neighbours.push(grid[coordinate.row + 1][coordinate.column]);
+    neighbours.push(grid[coordinate.row + 1][coordinate.column + 1]);
+  }
+
+  const definedNeighbours = neighbours.filter(
+    neighbour => neighbour !== undefined
+  );
+
+  return definedNeighbours;
 }
 
-module.exports = numberOfNeighbours;
+module.exports = neighbourValues;

@@ -11,3 +11,13 @@ test("Returns the values of all neighbours of cell at a coordinate", () => {
 
   expect(neighbourValues(coordinate, grid)).toEqual(expected);
 });
+
+test("Returns the values of neighbours for a corner cell", () => {
+  const coordinate = { column: 0, row: 0 };
+
+  const grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+  const expected = [2, 4, 5];
+
+  expect(neighbourValues(coordinate, grid)).toEqual(expected);
+});
