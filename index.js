@@ -1,5 +1,5 @@
-const tick = require("./tick");
-const render = require("./render");
+const tick = require("./lib/tick");
+const render = require("./lib/render");
 const tickDuration = 1000;
 const liveGlyph = "•";
 const deadGlyph = "_";
