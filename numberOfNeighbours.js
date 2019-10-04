@@ -1,5 +1,9 @@
+const neighbourValues = require("./neighbourValues");
+
 function numberOfNeighbours(coordinate, grid) {
-  return grid[0][0] === true ? 1 : 0;
+  const neighbours = neighbourValues(coordinate, grid);
+  const liveNeighbours = neighbours.filter(n => !!n);
+  return liveNeighbours.length;
 }
 
 module.exports = numberOfNeighbours;
