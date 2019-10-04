@@ -21,3 +21,22 @@ test("Returns the values of neighbours for a corner cell", () => {
 
   expect(neighbourValues(coordinate, grid)).toEqual(expected);
 });
+
+test("Still works if the board is bigger than 3x3", () => {
+  const coordinate = { column: 2, row: 1 };
+
+  const grid = [
+    // Row zero
+    [1, 2, 3, 4],
+    // Row one
+    [5, 6, 7, 8],
+    // Row two
+    [9, 10, 11, 12],
+    // Row three
+    [13, 14, 15, 16]
+  ];
+
+  expected = [2, 3, 4, 6, 8, 10, 11, 12];
+
+  expect(neighbourValues(coordinate, grid)).toEqual(expected);
+});
