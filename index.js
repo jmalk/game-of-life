@@ -1,8 +1,8 @@
 const tick = require("./lib/tick");
 const render = require("./lib/render");
 const tickDuration = 1000;
-const liveGlyph = "•";
-const deadGlyph = "_";
+const liveGlyph = "██";
+const deadGlyph = "  ";
 
 let state = [[false, false, false], [true, true, true], [false, false, false]];
 
