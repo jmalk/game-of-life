@@ -37,7 +37,7 @@ test("Still works if the board is bigger than 3x3", () => {
     [13, 14, 15, 16]
   ];
 
-  expected = [2, 3, 4, 6, 8, 10, 11, 12];
+  const expected = [2, 3, 4, 6, 8, 10, 11, 12];
 
   expect(neighbourValues(coordinate, grid)).toEqual(expected);
 });
