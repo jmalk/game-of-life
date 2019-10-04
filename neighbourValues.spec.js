@@ -25,6 +25,7 @@ test("Returns the values of neighbours for a corner cell", () => {
 test("Still works if the board is bigger than 3x3", () => {
   const coordinate = { column: 2, row: 1 };
 
+  // Row labels mainly to stop prettier making this one long line
   const grid = [
     // Row zero
     [1, 2, 3, 4],
