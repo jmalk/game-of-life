@@ -4,7 +4,13 @@ const tickDuration = 1000;
 const liveGlyph = "██";
 const deadGlyph = "  ";
 
-let state = [[false, false, false], [true, true, true], [false, false, false]];
+let state = [
+  [true, false, false, true, true],
+  [true, false, false, true, true],
+  [true, false, true, false, true],
+  [true, false, false, true, true],
+  [true, false, false, true, true]
+];
 
 setInterval(function() {
   state = tick(state);
