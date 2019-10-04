@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-To start a Game of Life in the console: `npm run start`.
+To start a Game of Life in the terminal: `npm run start`.
 
 To do some TDD: `npm run testwatch`.
 
