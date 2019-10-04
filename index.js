@@ -7,7 +7,7 @@ const deadGlyph = "_";
 let state = [[false, false, false], [true, true, true], [false, false, false]];
 
 setInterval(function() {
-  console.clear();
   state = tick(state);
+  console.clear();
   console.log(render(state, liveGlyph, deadGlyph));
 }, tickDuration);
