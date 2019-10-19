@@ -1,0 +1,12 @@
+{
+  "tickLength": 1000,
+  "liveGlyph": "██",
+  "deadGlyph": "  ",
+  "initialState": [
+    [true, false, false, true, true],
+    [true, false, false, true, true],
+    [true, false, true, false, true],
+    [true, false, false, true, true],
+    [true, false, false, true, true]
+  ]
+}
