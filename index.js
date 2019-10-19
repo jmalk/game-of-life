@@ -8,8 +8,9 @@ const {
   deadGlyph
 } = require("./default-config");
 
-const args = process.argv.slice(2);
-const randomStart = args.includes("random");
+const argv = require("yargs").argv;
+
+const randomStart = argv.random;
 
 let state = randomStart ? randomState(20, 20) : initialState;
 
