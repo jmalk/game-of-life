@@ -1,6 +1,10 @@
 # Conway's Game of Life
 
+First, run `npm install`.
+
 To start a Game of Life in the terminal: `npm run start`.
+
+See what parameters you can change: `npm run start -- --help`.
 
 To do some TDD: `npm run testwatch`.
 
