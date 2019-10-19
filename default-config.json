@@ -8,5 +8,7 @@
     [true, false, true, false, true],
     [true, false, false, true, true],
     [true, false, false, true, true]
-  ]
+  ],
+  "width": 10,
+  "height": 10
 }
