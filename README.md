@@ -1,10 +1,18 @@
 # Conway's Game of Life
 
-First, run `npm install`.
+Run a game of life in your terminal.
 
-To start a Game of Life in the terminal: `npm run start`.
+```
+npm ci
+npm start
+npm start -- --help
+```
 
-See what parameters you can change: `npm run start -- --help`.
+To randomly generate a game on a 20x20 grid, run
+
+```
+npm start -- -r -h 20 -w 20
+```
 
 ```
 Options:
