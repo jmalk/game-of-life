@@ -1,5 +1,7 @@
 # Conway's Game of Life
 
+https://user-images.githubusercontent.com/6491332/132953701-13a261dc-d771-4b62-b717-a5ae994b95ac.mov
+
 Run a game of life in your terminal.
 
 ```
